@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background: url("./images/egtContainerpng.png") top 50% left 50% / cover repeat;
+}
+.link {
+  display: flex;
+  position: relative;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  flex-direction: column;
+  cursor: pointer;
+  max-width: 256px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.linksmall {
+  height: 100%;
+  box-shadow: none;
+  min-height: 0;
+  border: 1px solid #e5e5ea;
+}
+.root .link:focus {
+  box-shadow: 0px 0px 0px 3px #007aff80;
+  outline: none;
+}
+.palms {
+  object-fit: cover;
+  max-height: 150px;
+  position: relative;
+  min-width: 150px;
+  width: auto;
+  left: auto;
+  top: auto;
+  z-index: 1;
+}
+.palms > picture > img {
+  object-fit: cover;
+}
+.palms > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .palms {
+    width: auto;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .palms > picture > img {
+    object-fit: contain;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .palms > :global(.__wab_img-spacer) > img {
+    object-fit: contain;
+  }
+}
+.freeBox {
+  display: block;
+  position: relative;
+}
+.rootsmall:hover .freeBoxsmall {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  background: #ffffffcc;
+}

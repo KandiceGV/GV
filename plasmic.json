@@ -590,6 +590,21 @@
           "id": "mKXfNk2WtSdn",
           "name": "livebg.png",
           "filePath": "plasmic/gv/images/livebgpng.png"
+        },
+        {
+          "id": "U4mE0NCiz_mv",
+          "name": "major.png",
+          "filePath": "plasmic/gv/images/majorpng.png"
+        },
+        {
+          "id": "ClYYiWc_T-pz",
+          "name": "Minor Frame.png",
+          "filePath": "plasmic/gv/images/minorFramepng.png"
+        },
+        {
+          "id": "k-oatBth86M5",
+          "name": "mini.png 2",
+          "filePath": "plasmic/gv/images/minipng2.png"
         }
       ],
       "indirect": false,

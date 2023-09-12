@@ -680,14 +680,17 @@
 }
 .img__t7WE0 {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 375px;
+  height: 170px;
+  flex-shrink: 0;
 }
 .img__t7WE0 > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__t7WE0 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__t7WE0 {

@@ -13,6 +13,8 @@
   --plasmic-token-star-color: var(--token-U9swydjVGFGD);
   --token-ZMn3E1_-BZhJ: 1032px;
   --plasmic-token-navwidth: var(--token-ZMn3E1_-BZhJ);
+  --token-LZSYrLg7iCCX: currentcolor;
+  --plasmic-token-unnamed-style-token: var(--token-LZSYrLg7iCCX);
 }
 
 @media (min-width: 0px) and (max-width: 768px) {

@@ -29,7 +29,7 @@ import slotchippngAoa6ACzzrqhv from "./images/slotchippng.png"; // plasmic-impor
 import grandpng2WfRnZvWhXv5 from "./images/grandpng2.png"; // plasmic-import: wfRn-zvWHXv5/picture
 import majorornamentpngBbFhQVirgbs from "./images/majorornamentpng.png"; // plasmic-import: _bbFhQVirgbs/picture
 import minorpngVei898MEgnN from "./images/minorpng.png"; // plasmic-import: Vei898-mEgnN/picture
-import minipng8ROhTd992RlW from "./images/minipng.png"; // plasmic-import: 8ROhTD992RlW/picture
+import minipng2KOatBth86M5 from "./images/minipng2.png"; // plasmic-import: k-oatBth86M5/picture
 import palmtreasuresTlszrL49Oo3 from "./images/palmtreasures.png"; // plasmic-import: TlszrL49oo_3/picture
 import shoe15G4Jc91KueZqy from "./images/shoe15.png"; // plasmic-import: g4JC91KueZQY/picture
 
@@ -334,9 +334,9 @@ function PlasmicSlots__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: minipng8ROhTd992RlW,
-                    fullWidth: 377,
-                    fullHeight: 164,
+                    src: minipng2KOatBth86M5,
+                    fullWidth: 371,
+                    fullHeight: 162,
                     aspectRatio: undefined
                   }}
                 />

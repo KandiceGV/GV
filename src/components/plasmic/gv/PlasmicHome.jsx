@@ -32,8 +32,8 @@ import newgamespngLdAs3JfHjSz from "./images/newgamespng.png"; // plasmic-import
 import liveTablesTextpng2ZhtsXtjrRf from "./images/liveTablesTextpng.png"; // plasmic-import: 2ZHTSXtjr-RF/picture
 import aviatorspribepng3EsHuwGi8Kkg from "./images/aviatorspribepng.png"; // plasmic-import: 3esHuwGi8KKG/picture
 import grandpng2WfRnZvWhXv5 from "./images/grandpng2.png"; // plasmic-import: wfRn-zvWHXv5/picture
-import majorornamentpngBbFhQVirgbs from "./images/majorornamentpng.png"; // plasmic-import: _bbFhQVirgbs/picture
-import minorpngVei898MEgnN from "./images/minorpng.png"; // plasmic-import: Vei898-mEgnN/picture
+import majorpngU4ME0NCizMv from "./images/majorpng.png"; // plasmic-import: U4mE0NCiz_mv/picture
+import minorFramepngClYYiWcTPz from "./images/minorFramepng.png"; // plasmic-import: ClYYiWc_T-pz/picture
 import minipng8ROhTd992RlW from "./images/minipng.png"; // plasmic-import: 8ROhTD992RlW/picture
 import smallgoldframepngAjBDsXlgJ0T from "./images/smallgoldframepng.png"; // plasmic-import: ajBDsXLG_j0T/picture
 
@@ -501,7 +501,7 @@ function PlasmicHome__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__t7WE0)}
-                  displayHeight={"auto"}
+                  displayHeight={"170px"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -509,13 +509,13 @@ function PlasmicHome__RenderFunc(props) {
                   displayWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "106px"
-                      : "auto"
+                      : "375px"
                   }
                   loading={"lazy"}
                   src={{
-                    src: majorornamentpngBbFhQVirgbs,
-                    fullWidth: 372,
-                    fullHeight: 160,
+                    src: majorpngU4ME0NCizMv,
+                    fullWidth: 371,
+                    fullHeight: 159,
                     aspectRatio: undefined
                   }}
                 />
@@ -564,9 +564,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: minorpngVei898MEgnN,
-                    fullWidth: 375,
-                    fullHeight: 170,
+                    src: minorFramepngClYYiWcTPz,
+                    fullWidth: 371,
+                    fullHeight: 167,
                     aspectRatio: undefined
                   }}
                 />

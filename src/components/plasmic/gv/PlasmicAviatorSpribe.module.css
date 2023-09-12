@@ -387,6 +387,21 @@
 .img__lgSkr > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (max-width: 834px) {
+  .img__lgSkr {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__lgSkr > picture > img {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__lgSkr > :global(.__wab_img-spacer) > img {
+    object-fit: fill;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .img__lgSkr {
     width: 106px;
@@ -416,7 +431,7 @@
 }
 @media (max-width: 834px) {
   .text__fiLa4 {
-    transform: translateX(0px) translateY(-75px) translateZ(0px);
+    transform: translateX(0px) translateY(-70px) translateZ(0px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -467,6 +482,21 @@
 }
 .img__v0Nl > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (max-width: 834px) {
+  .img__v0Nl {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__v0Nl > picture > img {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__v0Nl > :global(.__wab_img-spacer) > img {
+    object-fit: fill;
+  }
 }
 .text__er2Or {
   position: relative;
@@ -535,6 +565,21 @@
 }
 .img__bfBXb > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (max-width: 834px) {
+  .img__bfBXb {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__bfBXb > picture > img {
+    object-fit: fill;
+  }
+}
+@media (max-width: 834px) {
+  .img__bfBXb > :global(.__wab_img-spacer) > img {
+    object-fit: fill;
+  }
 }
 .text__svcVp {
   position: relative;

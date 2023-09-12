@@ -22,6 +22,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_gv.module.css"; // plasmic-import: mzuCRszeeZdCMSdpkmycrs/projectcss
 import sty from "./PlasmicNav.module.css"; // plasmic-import: q5nQYWWL3Xpt/css
 import MenuIcon from "./icons/PlasmicIcon__Menu"; // plasmic-import: VwtN0GCUtONh/icon
+import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: a6n81dhOd79x/icon
 import ProfileIcon from "./icons/PlasmicIcon__Profile"; // plasmic-import: Z5wqV-U81oP1/icon
 import gvlogoT8IjgRbslctS from "./images/gvlogo.gif"; // plasmic-import: T8IJGRbslctS/picture
 
@@ -88,7 +89,12 @@ function PlasmicNav__RenderFunc(props) {
           </a>
         }
         className={classNames("__wab_instance", sty.navigationBar)}
-        closeButton={null}
+        closeButton={
+          <RightArrowIcon
+            className={classNames(projectcss.all, sty.svg__sJ9Fz)}
+            role={"img"}
+          />
+        }
         itemsGap={8}
         menuItems={
           <React.Fragment>

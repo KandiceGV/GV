@@ -4,9 +4,15 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: none;
+  padding-bottom: 0px;
   min-width: 0;
   min-height: 0;
+}
+@media (max-width: 834px) {
+  .root {
+    padding-bottom: 0px;
+  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
@@ -14,17 +20,12 @@
     align-items: stretch;
     align-content: stretch;
     overflow: auto;
-    padding-bottom: 34px;
+    padding-bottom: 0px;
   }
 }
 .nav:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  top: auto;
-  left: auto;
-  z-index: 99;
-  height: 80px;
-  transform: translateX(0px) translateY(0px) translateZ(0px);
-  flex-shrink: 0;
 }
 .header {
   position: relative;
@@ -32,15 +33,14 @@
   left: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   padding-bottom: 0px;
   background: url("./images/banner2Png.png") top 0% left 47% / cover repeat
     content-box padding-box scroll;
-  height: 276px;
+  height: auto;
   overflow: hidden;
   transform: translateX(0px) translateY(0px) translateZ(0px);
-  flex-shrink: 0;
 }
 @media (max-width: 834px) {
   .header {
@@ -49,10 +49,10 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .header {
-    padding-bottom: 34px;
-    background: url("./images/mobilebannerpng.png") top -46% left 27% / cover repeat border-box
-      content-box;
-    margin-bottom: -84px;
+    padding-bottom: 0px;
+    background: url("./images/mobilebannerpng.png") top 20% left 27% / cover repeat
+      border-box content-box;
+    margin-bottom: auto;
     flex-wrap: nowrap;
     align-items: stretch;
     align-content: stretch;
@@ -61,10 +61,11 @@
     z-index: 9;
     position: relative;
     align-self: stretch;
+    margin-top: auto;
   }
 }
 .banner {
-  max-width: 1024px;
+  max-width: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -75,7 +76,7 @@
 .banner > :global(.__wab_flex-container) {
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   min-width: 0;
   margin-left: calc(0px - 0px);
   width: calc(100% + 0px);
@@ -95,17 +96,17 @@
 }
 @media (max-width: 834px) {
   .banner {
-    padding: 0px;
+    padding: 15px 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .banner {
-    padding-bottom: -2px;
-    margin-right: 25px;
-    padding-right: -14px;
-    height: 184px;
+    padding-bottom: 14px;
+    margin-right: 0px;
+    padding-right: 0px;
     overflow: visible;
-    flex-shrink: 0;
+    max-width: 1024px;
+    padding-top: 14px;
     display: flex;
   }
 }
@@ -135,6 +136,11 @@
   .freeBox {
     transform: translateX(0px) translateY(0px) translateZ(0px);
     display: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox > :global(.__wab_flex-container) {
+    align-items: stretch;
   }
 }
 .newslot {
@@ -180,6 +186,7 @@
   object-fit: cover;
   max-width: 100%;
   width: 120px;
+  align-self: center;
   display: none !important;
 }
 .img__ydgLo > picture > img {
@@ -193,45 +200,9 @@
     display: block !important;
   }
 }
-.homenav {
-  display: grid;
+.homenav:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  align-content: flex-start;
-  justify-items: center;
-  width: 100%;
-  background: #292929;
-  min-width: 0;
-  grid-template-columns:
-    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
-    min(
-      var(--plsmc-standard-width),
-      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
-    )
-    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-  padding: 8px 1111px 8px 0px;
-}
-.homenav > * {
-  grid-column: 4;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .homenav {
-    transform: translateX(0px) translateY(0px) translateZ(0px);
-    padding-top: 51px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .homenav > * {
-    grid-column: 4;
-  }
-}
-.home {
-  position: relative;
-  object-fit: cover;
-  max-width: 50px;
-  color: #ffffff;
-  width: 50px;
-  height: 50px;
-  justify-self: flex-start;
 }
 .mainbody {
   position: relative;
@@ -671,7 +642,7 @@
 .palmsEgtIgt > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: nowrap;
   align-content: center;
   min-width: 0;
@@ -780,7 +751,7 @@
 .wazdanBallyAristo > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: nowrap;
   align-content: center;
   min-width: 0;

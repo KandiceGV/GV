@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import NavBar from "../../NavBar"; // plasmic-import: sJnkaKbN1RIw/component
+import Nav from "../../Nav"; // plasmic-import: q5nQYWWL3Xpt/component
 import { useScreenVariants as useScreenVariantscWoeu4D18NgU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CWoeu4d18NgU/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_gv.module.css"; // plasmic-import: mzuCRszeeZdCMSdpkmycrs/projectcss
@@ -36,22 +36,12 @@ import majorornamentpngBbFhQVirgbs from "./images/majorornamentpng.png"; // plas
 import minorpngVei898MEgnN from "./images/minorpng.png"; // plasmic-import: Vei898-mEgnN/picture
 import minipng8ROhTd992RlW from "./images/minipng.png"; // plasmic-import: 8ROhTD992RlW/picture
 import smallgoldframepngAjBDsXlgJ0T from "./images/smallgoldframepng.png"; // plasmic-import: ajBDsXLG_j0T/picture
-import squaregoldframe1PngYm2QbuG208BV from "./images/squaregoldframe1Png.png"; // plasmic-import: ym2qbuG208bV/picture
 
 createPlasmicElementProxy;
 
 export const PlasmicHome__VariantProps = new Array();
 
 export const PlasmicHome__ArgProps = new Array();
-
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
 
 function PlasmicHome__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
@@ -88,448 +78,350 @@ function PlasmicHome__RenderFunc(props) {
   });
   return (
     <React.Fragment>
-      <div
-        data-plasmic-name={"home"}
-        data-plasmic-override={overrides.home}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          sty.home
-        )}
-      >
-        <NavBar
-          data-plasmic-name={"nav"}
-          data-plasmic-override={overrides.nav}
-          className={classNames("__wab_instance", sty.nav)}
-        />
-
-        <section
-          data-plasmic-name={"header"}
-          data-plasmic-override={overrides.header}
-          className={classNames(projectcss.all, sty.header)}
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"home"}
+          data-plasmic-override={overrides.home}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            sty.home
+          )}
         >
-          <div
-            data-plasmic-name={"chips"}
-            data-plasmic-override={overrides.chips}
-            className={classNames(projectcss.all, sty.chips)}
+          <Nav
+            data-plasmic-name={"nav"}
+            data-plasmic-override={overrides.nav}
+            className={classNames("__wab_instance", sty.nav)}
+          />
+
+          <section
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames(projectcss.all, sty.header)}
           >
             <div
-              data-plasmic-name={"slots"}
-              data-plasmic-override={overrides.slots}
-              className={classNames(projectcss.all, sty.slots)}
+              data-plasmic-name={"chips"}
+              data-plasmic-override={overrides.chips}
+              className={classNames(projectcss.all, sty.chips)}
             >
-              <p.PlasmicImg
-                data-plasmic-name={"slotschip"}
-                data-plasmic-override={overrides.slotschip}
-                alt={""}
-                className={classNames(sty.slotschip)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"150px"}
-                loading={"lazy"}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["goToSlots"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          destination: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "navigation",
-                              interactionUuid: "GNZyIXKpaa_b",
-                              componentUuid: "3-XCU9v-YW2v",
-                              argName: "destination"
-                            },
-                            () => `/slots`
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "navigation",
-                            interactionUuid: "GNZyIXKpaa_b",
-                            componentUuid: "3-XCU9v-YW2v"
-                          },
-                          () =>
-                            (({ destination }) => {
-                              location.assign(destination);
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["goToSlots"] === "object" &&
-                    typeof $steps["goToSlots"].then === "function"
-                  ) {
-                    $steps["goToSlots"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "navigation",
-                        interactionUuid: "GNZyIXKpaa_b",
-                        componentUuid: "3-XCU9v-YW2v"
-                      },
-                      $steps["goToSlots"]
-                    );
+              <div
+                data-plasmic-name={"slots"}
+                data-plasmic-override={overrides.slots}
+                className={classNames(projectcss.all, sty.slots)}
+              >
+                <p.PlasmicImg
+                  data-plasmic-name={"slotschip"}
+                  data-plasmic-override={overrides.slotschip}
+                  alt={""}
+                  className={classNames(sty.slotschip)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100px"
+                      : "150px"
                   }
-                }}
-                src={{
-                  src: _777ChippngYOzaatEavQF,
-                  fullWidth: 685,
-                  fullHeight: 685,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div
-              data-plasmic-name={"_new"}
-              data-plasmic-override={overrides._new}
-              className={classNames(projectcss.all, sty._new)}
-            >
-              <p.PlasmicImg
-                data-plasmic-name={"newgameschip"}
-                data-plasmic-override={overrides.newgameschip}
-                alt={""}
-                className={classNames(sty.newgameschip)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"150px"}
-                loading={"lazy"}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["goToNewGames"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          destination: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "navigation",
-                              interactionUuid: "V73XI3fXqpv4",
-                              componentUuid: "3-XCU9v-YW2v",
-                              argName: "destination"
-                            },
-                            () => `/new-games`
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "navigation",
-                            interactionUuid: "V73XI3fXqpv4",
-                            componentUuid: "3-XCU9v-YW2v"
-                          },
-                          () =>
-                            (({ destination }) => {
-                              location.assign(destination);
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["goToNewGames"] === "object" &&
-                    typeof $steps["goToNewGames"].then === "function"
-                  ) {
-                    $steps["goToNewGames"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "navigation",
-                        interactionUuid: "V73XI3fXqpv4",
-                        componentUuid: "3-XCU9v-YW2v"
-                      },
-                      $steps["goToNewGames"]
-                    );
+                  loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToSlots"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/slots` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToSlots"] === "object" &&
+                      typeof $steps["goToSlots"].then === "function"
+                    ) {
+                      $steps["goToSlots"] = await $steps["goToSlots"];
+                    }
+                  }}
+                  src={{
+                    src: _777ChippngYOzaatEavQF,
+                    fullWidth: 685,
+                    fullHeight: 685,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"_new"}
+                data-plasmic-override={overrides._new}
+                className={classNames(projectcss.all, sty._new)}
+              >
+                <p.PlasmicImg
+                  data-plasmic-name={"newgameschip"}
+                  data-plasmic-override={overrides.newgameschip}
+                  alt={""}
+                  className={classNames(sty.newgameschip)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100px"
+                      : "150px"
                   }
-                }}
-                src={{
-                  src: newSlotspng1P7OWD89Yy0,
-                  fullWidth: 475,
-                  fullHeight: 475,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div
-              data-plasmic-name={"livetables"}
-              data-plasmic-override={overrides.livetables}
-              className={classNames(projectcss.all, sty.livetables)}
-            >
-              <p.PlasmicImg
-                data-plasmic-name={"livetableschip"}
-                data-plasmic-override={overrides.livetableschip}
-                alt={""}
-                className={classNames(sty.livetableschip)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"150px"}
-                loading={"lazy"}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["goToLiveGames"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          destination: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "navigation",
-                              interactionUuid: "cIzP2F4CW4Ag",
-                              componentUuid: "3-XCU9v-YW2v",
-                              argName: "destination"
-                            },
-                            () => `/live-games`
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "navigation",
-                            interactionUuid: "cIzP2F4CW4Ag",
-                            componentUuid: "3-XCU9v-YW2v"
-                          },
-                          () =>
-                            (({ destination }) => {
-                              location.assign(destination);
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["goToLiveGames"] === "object" &&
-                    typeof $steps["goToLiveGames"].then === "function"
-                  ) {
-                    $steps["goToLiveGames"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "navigation",
-                        interactionUuid: "cIzP2F4CW4Ag",
-                        componentUuid: "3-XCU9v-YW2v"
-                      },
-                      $steps["goToLiveGames"]
-                    );
+                  loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToNewGames"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/new-games` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToNewGames"] === "object" &&
+                      typeof $steps["goToNewGames"].then === "function"
+                    ) {
+                      $steps["goToNewGames"] = await $steps["goToNewGames"];
+                    }
+                  }}
+                  src={{
+                    src: newSlotspng1P7OWD89Yy0,
+                    fullWidth: 475,
+                    fullHeight: 475,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"livetables"}
+                data-plasmic-override={overrides.livetables}
+                className={classNames(projectcss.all, sty.livetables)}
+              >
+                <p.PlasmicImg
+                  data-plasmic-name={"livetableschip"}
+                  data-plasmic-override={overrides.livetableschip}
+                  alt={""}
+                  className={classNames(sty.livetableschip)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100px"
+                      : "150px"
                   }
-                }}
-                src={{
-                  src: liveTablespngVhz8JE5TGa7,
-                  fullWidth: 485,
-                  fullHeight: 485,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div
-              data-plasmic-name={"aviatorspribe"}
-              data-plasmic-override={overrides.aviatorspribe}
-              className={classNames(projectcss.all, sty.aviatorspribe)}
-            >
-              <p.PlasmicImg
-                data-plasmic-name={"aviatorchip"}
-                data-plasmic-override={overrides.aviatorchip}
-                alt={""}
-                className={classNames(sty.aviatorchip)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"150px"}
-                loading={"lazy"}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["goToAviatorSpribe"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          destination: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "navigation",
-                              interactionUuid: "ovHDYDgGlupT",
-                              componentUuid: "3-XCU9v-YW2v",
-                              argName: "destination"
-                            },
-                            () => `/aviator-spribe`
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "navigation",
-                            interactionUuid: "ovHDYDgGlupT",
-                            componentUuid: "3-XCU9v-YW2v"
-                          },
-                          () =>
-                            (({ destination }) => {
-                              location.assign(destination);
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["goToAviatorSpribe"] === "object" &&
-                    typeof $steps["goToAviatorSpribe"].then === "function"
-                  ) {
-                    $steps["goToAviatorSpribe"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "navigation",
-                        interactionUuid: "ovHDYDgGlupT",
-                        componentUuid: "3-XCU9v-YW2v"
-                      },
-                      $steps["goToAviatorSpribe"]
-                    );
+                  loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToLiveGames"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/live-games` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToLiveGames"] === "object" &&
+                      typeof $steps["goToLiveGames"].then === "function"
+                    ) {
+                      $steps["goToLiveGames"] = await $steps["goToLiveGames"];
+                    }
+                  }}
+                  src={{
+                    src: liveTablespngVhz8JE5TGa7,
+                    fullWidth: 485,
+                    fullHeight: 485,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"aviatorspribe"}
+                data-plasmic-override={overrides.aviatorspribe}
+                className={classNames(projectcss.all, sty.aviatorspribe)}
+              >
+                <p.PlasmicImg
+                  data-plasmic-name={"aviatorchip"}
+                  data-plasmic-override={overrides.aviatorchip}
+                  alt={""}
+                  className={classNames(sty.aviatorchip)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100px"
+                      : "150px"
                   }
-                }}
-                src={{
-                  src: aviatorpng6D6PkLwhbqr,
-                  fullWidth: 480,
-                  fullHeight: 480,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-          </div>
-          <div
-            data-plasmic-name={"chipTitles"}
-            data-plasmic-override={overrides.chipTitles}
-            className={classNames(projectcss.all, sty.chipTitles)}
-          >
-            <div
-              data-plasmic-name={"slots2"}
-              data-plasmic-override={overrides.slots2}
-              className={classNames(projectcss.all, sty.slots2)}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__m4JJt)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "65px"
-                    : "100px"
-                }
-                loading={"lazy"}
-                src={{
-                  src: slotgamespngAhW0NwTuc34U,
-                  fullWidth: 1225,
-                  fullHeight: 859,
-                  aspectRatio: undefined
-                }}
-              />
+                  loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToAviatorSpribe"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/aviator-spribe` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToAviatorSpribe"] === "object" &&
+                      typeof $steps["goToAviatorSpribe"].then === "function"
+                    ) {
+                      $steps["goToAviatorSpribe"] = await $steps[
+                        "goToAviatorSpribe"
+                      ];
+                    }
+                  }}
+                  src={{
+                    src: aviatorpng6D6PkLwhbqr,
+                    fullWidth: 480,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
             </div>
             <div
-              data-plasmic-name={"new2"}
-              data-plasmic-override={overrides.new2}
-              className={classNames(projectcss.all, sty.new2)}
+              data-plasmic-name={"chipTitles"}
+              data-plasmic-override={overrides.chipTitles}
+              className={classNames(projectcss.all, sty.chipTitles)}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__f6B2L)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "65px"
-                    : "100px"
-                }
-                loading={"lazy"}
-                src={{
-                  src: newgamespngLdAs3JfHjSz,
-                  fullWidth: 1225,
-                  fullHeight: 858,
-                  aspectRatio: undefined
-                }}
-              />
+              <div
+                data-plasmic-name={"slots2"}
+                data-plasmic-override={overrides.slots2}
+                className={classNames(projectcss.all, sty.slots2)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__m4JJt)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "65px"
+                      : "100px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: slotgamespngAhW0NwTuc34U,
+                    fullWidth: 1225,
+                    fullHeight: 859,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"new2"}
+                data-plasmic-override={overrides.new2}
+                className={classNames(projectcss.all, sty.new2)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__f6B2L)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "65px"
+                      : "100px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: newgamespngLdAs3JfHjSz,
+                    fullWidth: 1225,
+                    fullHeight: 858,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"livetables2"}
+                data-plasmic-override={overrides.livetables2}
+                className={classNames(projectcss.all, sty.livetables2)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__x9XnK)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "65px"
+                      : "100px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: liveTablesTextpng2ZhtsXtjrRf,
+                    fullWidth: 1603,
+                    fullHeight: 1187,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"aviatorspribe2"}
+                data-plasmic-override={overrides.aviatorspribe2}
+                className={classNames(projectcss.all, sty.aviatorspribe2)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__xLb6S)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "65px"
+                      : "100px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: aviatorspribepng3EsHuwGi8Kkg,
+                    fullWidth: 1416,
+                    fullHeight: 959,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
             </div>
-            <div
-              data-plasmic-name={"livetables2"}
-              data-plasmic-override={overrides.livetables2}
-              className={classNames(projectcss.all, sty.livetables2)}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__x9XnK)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "65px"
-                    : "100px"
-                }
-                loading={"lazy"}
-                src={{
-                  src: liveTablesTextpng2ZhtsXtjrRf,
-                  fullWidth: 1603,
-                  fullHeight: 1187,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div
-              data-plasmic-name={"aviatorspribe2"}
-              data-plasmic-override={overrides.aviatorspribe2}
-              className={classNames(projectcss.all, sty.aviatorspribe2)}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__xLb6S)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "65px"
-                    : "100px"
-                }
-                loading={"lazy"}
-                src={{
-                  src: aviatorspribepng3EsHuwGi8Kkg,
-                  fullWidth: 1416,
-                  fullHeight: 959,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-          </div>
-        </section>
-        <section
-          data-plasmic-name={"homenav"}
-          data-plasmic-override={overrides.homenav}
-          className={classNames(projectcss.all, sty.homenav)}
-        />
+          </section>
+          <section
+            data-plasmic-name={"homenav"}
+            data-plasmic-override={overrides.homenav}
+            className={classNames(projectcss.all, sty.homenav)}
+          />
 
-        <section
-          data-plasmic-name={"mainbody"}
-          data-plasmic-override={overrides.mainbody}
-          className={classNames(projectcss.all, sty.mainbody)}
-        >
-          {true ? (
+          <section
+            data-plasmic-name={"mainbody"}
+            data-plasmic-override={overrides.mainbody}
+            className={classNames(projectcss.all, sty.mainbody)}
+          >
             <div
               data-plasmic-name={"grandjackpot"}
               data-plasmic-override={overrides.grandjackpot}
@@ -596,8 +488,6 @@ function PlasmicHome__RenderFunc(props) {
                 </div>
               </div>
             </div>
-          ) : null}
-          {true ? (
             <div
               data-plasmic-name={"majorminormini"}
               data-plasmic-override={overrides.majorminormini}
@@ -786,109 +676,109 @@ function PlasmicHome__RenderFunc(props) {
                 </div>
               </div>
             </div>
-          ) : null}
-          <div
-            data-plasmic-name={"gamecontainers"}
-            data-plasmic-override={overrides.gamecontainers}
-            className={classNames(projectcss.all, sty.gamecontainers)}
-          >
-            <div className={classNames(projectcss.all, sty.column__sxZtQ)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img___8KOsJ)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: smallgoldframepngAjBDsXlgJ0T,
-                  fullWidth: 678,
-                  fullHeight: 392,
-                  aspectRatio: undefined
-                }}
-              />
+            <div
+              data-plasmic-name={"gamecontainers"}
+              data-plasmic-override={overrides.gamecontainers}
+              className={classNames(projectcss.all, sty.gamecontainers)}
+            >
+              <div className={classNames(projectcss.all, sty.column__sxZtQ)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___8KOsJ)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: smallgoldframepngAjBDsXlgJ0T,
+                    fullWidth: 678,
+                    fullHeight: 392,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__wNuK3)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__tu8M)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: smallgoldframepngAjBDsXlgJ0T,
+                    fullWidth: 678,
+                    fullHeight: 392,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column___4QuTf)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__lyzSu)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: smallgoldframepngAjBDsXlgJ0T,
+                    fullWidth: 678,
+                    fullHeight: 392,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__aEco)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__vJJe6)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: smallgoldframepngAjBDsXlgJ0T,
+                    fullWidth: 678,
+                    fullHeight: 392,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__vaN9I)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__lyAR)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: smallgoldframepngAjBDsXlgJ0T,
+                    fullWidth: 678,
+                    fullHeight: 392,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
             </div>
-            <div className={classNames(projectcss.all, sty.column__wNuK3)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__tu8M)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: smallgoldframepngAjBDsXlgJ0T,
-                  fullWidth: 678,
-                  fullHeight: 392,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.column___4QuTf)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__lyzSu)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: smallgoldframepngAjBDsXlgJ0T,
-                  fullWidth: 678,
-                  fullHeight: 392,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.column__aEco)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__vJJe6)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: smallgoldframepngAjBDsXlgJ0T,
-                  fullWidth: 678,
-                  fullHeight: 392,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.column__vaN9I)}>
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__lyAR)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: squaregoldframe1PngYm2QbuG208BV,
-                  fullWidth: 501,
-                  fullHeight: 501,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </React.Fragment>
   );

@@ -1,0 +1,53 @@
+.homenav {
+  display: grid;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  background: #292929;
+  position: relative;
+  min-width: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+  padding: 8px 1111px 8px 0px;
+}
+.homenav > * {
+  grid-column: 4;
+}
+@media (max-width: 834px) {
+  .homenav {
+    padding: 0px;
+  }
+}
+@media (max-width: 834px) {
+  .homenav > * {
+    grid-column: 4;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .homenav {
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+    max-width: 828px;
+    width: 100%;
+    padding-right: 747px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .homenav > * {
+    grid-column: 4;
+  }
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 50px;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  justify-self: flex-start;
+}

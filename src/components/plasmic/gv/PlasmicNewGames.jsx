@@ -18,13 +18,13 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import NavBar from "../../NavBar"; // plasmic-import: sJnkaKbN1RIw/component
+import Nav from "../../Nav"; // plasmic-import: q5nQYWWL3Xpt/component
+import Homenav from "../../Homenav"; // plasmic-import: 5-fMA3NxLlyg/component
 import Gamecontainers from "../../Gamecontainers"; // plasmic-import: FudiOxfuM-P6/component
 import { useScreenVariants as useScreenVariantscWoeu4D18NgU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CWoeu4d18NgU/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_gv.module.css"; // plasmic-import: mzuCRszeeZdCMSdpkmycrs/projectcss
 import sty from "./PlasmicNewGames.module.css"; // plasmic-import: oW6vRYQSy8Ko/css
-import HomeIcon from "./icons/PlasmicIcon__Home"; // plasmic-import: Kd2MFf3GbQ5_/icon
 import newSlotspng1P7OWD89Yy0 from "./images/newSlotspng.png"; // plasmic-import: 1P7o-wD89yy0/picture
 import grandpng2WfRnZvWhXv5 from "./images/grandpng2.png"; // plasmic-import: wfRn-zvWHXv5/picture
 import majorornamentpngBbFhQVirgbs from "./images/majorornamentpng.png"; // plasmic-import: _bbFhQVirgbs/picture
@@ -38,15 +38,6 @@ createPlasmicElementProxy;
 export const PlasmicNewGames__VariantProps = new Array();
 
 export const PlasmicNewGames__ArgProps = new Array();
-
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
 
 function PlasmicNewGames__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
@@ -79,7 +70,7 @@ function PlasmicNewGames__RenderFunc(props) {
             sty.root
           )}
         >
-          <NavBar
+          <Nav
             data-plasmic-name={"nav"}
             data-plasmic-override={overrides.nav}
             className={classNames("__wab_instance", sty.nav)}
@@ -90,357 +81,314 @@ function PlasmicNewGames__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"banner"}
+              data-plasmic-override={overrides.banner}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.banner)}
+            >
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"banner"}
-                data-plasmic-override={overrides.banner}
+                data-plasmic-name={"freeBox"}
+                data-plasmic-override={overrides.freeBox}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.banner)}
+                className={classNames(projectcss.all, sty.freeBox)}
               >
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"freeBox"}
-                    data-plasmic-override={overrides.freeBox}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        data-plasmic-name={"newslot"}
-                        data-plasmic-override={overrides.newslot}
-                        alt={""}
-                        className={classNames(sty.newslot)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "120px"
-                            : "150px"
-                        }
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: newSlotspng1P7OWD89Yy0,
-                          fullWidth: 475,
-                          fullHeight: 475,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null}
-                  </p.Stack>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__ydgLo)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"120px"}
-                    loading={"lazy"}
-                    src={{
-                      src: newSlotspng1P7OWD89Yy0,
-                      fullWidth: 475,
-                      fullHeight: 475,
-                      aspectRatio: undefined
-                    }}
-                  />
-                ) : null}
+                <p.PlasmicImg
+                  data-plasmic-name={"newslot"}
+                  data-plasmic-override={overrides.newslot}
+                  alt={""}
+                  className={classNames(sty.newslot)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "120px"
+                      : "150px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: newSlotspng1P7OWD89Yy0,
+                    fullWidth: 475,
+                    fullHeight: 475,
+                    aspectRatio: undefined
+                  }}
+                />
               </p.Stack>
-            ) : null}
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__ydgLo)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"120px"}
+                loading={"lazy"}
+                src={{
+                  src: newSlotspng1P7OWD89Yy0,
+                  fullWidth: 475,
+                  fullHeight: 475,
+                  aspectRatio: undefined
+                }}
+              />
+            </p.Stack>
           </section>
-          <section
+          <Homenav
             data-plasmic-name={"homenav"}
             data-plasmic-override={overrides.homenav}
-            className={classNames(projectcss.all, sty.homenav)}
-          >
-            <HomeIcon
-              data-plasmic-name={"home"}
-              data-plasmic-override={overrides.home}
-              className={classNames(projectcss.all, sty.home)}
-              onClick={async event => {
-                const $steps = {};
-              }}
-              role={"img"}
-            />
-          </section>
+            className={classNames("__wab_instance", sty.homenav)}
+          />
+
           <section
             data-plasmic-name={"mainbody"}
             data-plasmic-override={overrides.mainbody}
             className={classNames(projectcss.all, sty.mainbody)}
           >
-            {true ? (
+            <div
+              data-plasmic-name={"grandjackpot"}
+              data-plasmic-override={overrides.grandjackpot}
+              className={classNames(projectcss.all, sty.grandjackpot)}
+            >
               <div
-                data-plasmic-name={"grandjackpot"}
-                data-plasmic-override={overrides.grandjackpot}
-                className={classNames(projectcss.all, sty.grandjackpot)}
+                data-plasmic-name={"grand"}
+                data-plasmic-override={overrides.grand}
+                className={classNames(projectcss.all, sty.grand)}
               >
-                <div
-                  data-plasmic-name={"grand"}
-                  data-plasmic-override={overrides.grand}
-                  className={classNames(projectcss.all, sty.grand)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__eZudl)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "200px"
-                        : "500px"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: grandpng2WfRnZvWhXv5,
-                      fullWidth: 595,
-                      fullHeight: 196,
-                      aspectRatio: undefined
-                    }}
-                  />
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__eZudl)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "200px"
+                      : "500px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: grandpng2WfRnZvWhXv5,
+                    fullWidth: 595,
+                    fullHeight: 196,
+                    aspectRatio: undefined
+                  }}
+                />
 
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__laYx
-                    )}
-                  >
-                    {"GRAND JACKPOT"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__l4IPg
-                    )}
-                  >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__laYx
+                  )}
+                >
+                  {"GRAND JACKPOT"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__l4IPg
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"1234569 GVK"}
+                    </span>
+                  </React.Fragment>
+                </div>
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"majorminormini"}
+              data-plasmic-override={overrides.majorminormini}
+              className={classNames(projectcss.all, sty.majorminormini)}
+            >
+              <div
+                data-plasmic-name={"major"}
+                data-plasmic-override={overrides.major}
+                className={classNames(projectcss.all, sty.major)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___9I3Qh)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "106px"
+                      : "auto"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: majorornamentpngBbFhQVirgbs,
+                    fullWidth: 372,
+                    fullHeight: 160,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__oSkRk
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                     <React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
-                        {"1234569 GVK"}
+                        {"MAJOR"}
                       </span>
                     </React.Fragment>
-                  </div>
-                </div>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"majorminormini"}
-                data-plasmic-override={overrides.majorminormini}
-                className={classNames(projectcss.all, sty.majorminormini)}
-              >
-                <div
-                  data-plasmic-name={"major"}
-                  data-plasmic-override={overrides.major}
-                  className={classNames(projectcss.all, sty.major)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___9I3Qh)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "106px"
-                        : "auto"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: majorornamentpngBbFhQVirgbs,
-                      fullWidth: 372,
-                      fullHeight: 160,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__oSkRk
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"MAJOR"}
-                        </span>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"MAJOR JACKPOT"}
-                        </span>
-                      </React.Fragment>
-                    )}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__wa4Z
-                    )}
-                  >
+                  ) : (
                     <React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
-                        {"4565 GVK"}
+                        {"MAJOR JACKPOT"}
                       </span>
                     </React.Fragment>
-                  </div>
+                  )}
                 </div>
                 <div
-                  data-plasmic-name={"minor"}
-                  data-plasmic-override={overrides.minor}
-                  className={classNames(projectcss.all, sty.minor)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wa4Z
+                  )}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__bASft)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: minorpngVei898MEgnN,
-                      fullWidth: 375,
-                      fullHeight: 170,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vzMFc
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "MINOR"
-                      : "MINOR JACKPOT"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___5CsVt
-                    )}
-                  >
-                    {"789 GVK"}
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"mini"}
-                  data-plasmic-override={overrides.mini}
-                  className={classNames(projectcss.all, sty.mini)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__dS7Vi)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: minipng8ROhTd992RlW,
-                      fullWidth: 377,
-                      fullHeight: 164,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__uBtv
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"MINI"}
-                        </span>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"MINI JACKPOT"}
-                        </span>
-                      </React.Fragment>
-                    )}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1RtgD
-                    )}
-                  >
-                    {"51 GVK"}
-                  </div>
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"4565 GVK"}
+                    </span>
+                  </React.Fragment>
                 </div>
               </div>
-            ) : null}
+              <div
+                data-plasmic-name={"minor"}
+                data-plasmic-override={overrides.minor}
+                className={classNames(projectcss.all, sty.minor)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__bASft)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: minorpngVei898MEgnN,
+                    fullWidth: 375,
+                    fullHeight: 170,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vzMFc
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "MINOR"
+                    : "MINOR JACKPOT"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___5CsVt
+                  )}
+                >
+                  {"789 GVK"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"mini"}
+                data-plasmic-override={overrides.mini}
+                className={classNames(projectcss.all, sty.mini)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__dS7Vi)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: minipng8ROhTd992RlW,
+                    fullWidth: 377,
+                    fullHeight: 164,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__uBtv
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"MINI"}
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"MINI JACKPOT"}
+                      </span>
+                    </React.Fragment>
+                  )}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___1RtgD
+                  )}
+                >
+                  {"51 GVK"}
+                </div>
+              </div>
+            </div>
             <p.Stack
               as={"div"}
               data-plasmic-name={"palmsEgtIgt"}
@@ -472,15 +420,11 @@ function PlasmicNewGames__RenderFunc(props) {
                 }}
               />
 
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <Gamecontainers
-                  data-plasmic-name={"igt"}
-                  data-plasmic-override={overrides.igt}
-                  className={classNames("__wab_instance", sty.igt)}
-                />
-              ) : null}
+              <Gamecontainers
+                data-plasmic-name={"igt"}
+                data-plasmic-override={overrides.igt}
+                className={classNames("__wab_instance", sty.igt)}
+              />
             </p.Stack>
             <p.Stack
               as={"div"}
@@ -554,7 +498,6 @@ const PlasmicDescendants = {
     "freeBox",
     "newslot",
     "homenav",
-    "home",
     "mainbody",
     "grandjackpot",
     "grand",
@@ -579,8 +522,7 @@ const PlasmicDescendants = {
   banner: ["banner", "freeBox", "newslot"],
   freeBox: ["freeBox", "newslot"],
   newslot: ["newslot"],
-  homenav: ["homenav", "home"],
-  home: ["home"],
+  homenav: ["homenav"],
   mainbody: [
     "mainbody",
     "grandjackpot",
@@ -658,7 +600,6 @@ export const PlasmicNewGames = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     newslot: makeNodeComponent("newslot"),
     homenav: makeNodeComponent("homenav"),
-    home: makeNodeComponent("home"),
     mainbody: makeNodeComponent("mainbody"),
     grandjackpot: makeNodeComponent("grandjackpot"),
     grand: makeNodeComponent("grand"),

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&family=Montserrat%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&family=Poppins%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C800&display=swap");
 
 .plasmic_tokens {
   --token-SoOKQEEApfHs: #007aff;
@@ -9,7 +9,7 @@
   --plasmic-token-secondary-label: var(--token-oS-L6cnhXPS8);
   --token-RB_neP9FZCCc: #f2f2f7;
   --plasmic-token-light-gray-06: var(--token-RB_neP9FZCCc);
-  --token-U9swydjVGFGD: #ffcc00;
+  --token-U9swydjVGFGD: #ce9400;
   --plasmic-token-star-color: var(--token-U9swydjVGFGD);
   --token-ZMn3E1_-BZhJ: 1032px;
   --plasmic-token-navwidth: var(--token-ZMn3E1_-BZhJ);
@@ -35,7 +35,7 @@
 .plasmic_default_styles,
 .plasmic_default_styles:where(.global_unnamedGlobalGroupOfVariants_unnamedVariant),
 .plasmic_default_styles:where(.global_unnamedGlobalGroupOfVariants2_unnamedVariant) {
-  --mixin-YGtgkMrMFK1i_font-family: "Inter", sans-serif;
+  --mixin-YGtgkMrMFK1i_font-family: "Montserrat", sans-serif;
   --mixin-YGtgkMrMFK1i_font-size: 16px;
   --mixin-YGtgkMrMFK1i_font-style: normal;
   --mixin-YGtgkMrMFK1i_color: #333333;

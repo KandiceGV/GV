@@ -3,20 +3,27 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #ffffff;
-  overflow: auto;
   padding-bottom: 0px;
   min-width: 0;
+  min-height: 0;
+}
+@media (max-width: 834px) {
+  .home {
+    background: none;
+    padding: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .home {
+    padding-bottom: 0px;
+    background: none;
+  }
 }
 .nav:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  top: auto;
-  left: auto;
-  z-index: 99;
-  height: 80px;
-  transform: translateX(0px) translateY(0px) translateZ(0px);
-  flex-shrink: 0;
 }
 .header {
   position: relative;
@@ -48,6 +55,7 @@
       )
       0% 0% / cover repeat;
     margin-bottom: -98px;
+    align-items: stretch;
   }
 }
 .chips {
@@ -131,6 +139,22 @@
 .slotschip > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotschip {
+    object-fit: scale-down;
+    width: 100px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotschip > picture > img {
+    object-fit: scale-down;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotschip > :global(.__wab_img-spacer) > img {
+    object-fit: scale-down;
+  }
+}
 ._new {
   display: flex;
   position: relative;
@@ -154,6 +178,11 @@
 }
 .newgameschip > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .newgameschip {
+    width: 100px;
+  }
 }
 .livetables {
   display: flex;
@@ -179,6 +208,11 @@
 .livetableschip > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .livetableschip {
+    width: 100px;
+  }
+}
 .aviatorspribe {
   display: flex;
   position: relative;
@@ -202,6 +236,11 @@
 }
 .aviatorchip > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .aviatorchip {
+    width: 100px;
+  }
 }
 .chipTitles {
   --plsmc-rc-col-gap: 0px;
@@ -398,7 +437,7 @@
       calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
     )
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-  padding: 8px 1111px 8px 0px;
+  padding: 8px 0px;
 }
 .homenav > * {
   grid-column: 4;
@@ -424,10 +463,20 @@
   left: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   background: url("./images/homebgpng.png") 0% 0% / 100% 100% repeat;
+  margin-bottom: 0px;
   padding: 32px;
+}
+@media (max-width: 834px) {
+  .mainbody {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-right: 34px;
+    height: 100%;
+    min-height: 0;
+  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .mainbody {

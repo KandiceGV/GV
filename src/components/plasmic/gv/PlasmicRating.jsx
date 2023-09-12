@@ -30,15 +30,6 @@ export const PlasmicRating__VariantProps = new Array("rating");
 
 export const PlasmicRating__ArgProps = new Array();
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicRating__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);

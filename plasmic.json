@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -39,7 +39,8 @@
           "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "mzuCRszeeZdCMSdpkmycrs",
@@ -89,19 +90,6 @@
           "componentType": "component"
         },
         {
-          "id": "wpQxAb5ONARx",
-          "name": "Value",
-          "type": "managed",
-          "projectId": "mzuCRszeeZdCMSdpkmycrs",
-          "renderModuleFilePath": "plasmic/gv/PlasmicValue.jsx",
-          "importSpec": {
-            "modulePath": "Value.jsx"
-          },
-          "cssFilePath": "plasmic/gv/PlasmicValue.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "sJnkaKbN1RIw",
           "name": "NavBar",
           "type": "managed",
@@ -111,58 +99,6 @@
             "modulePath": "NavBar.jsx"
           },
           "cssFilePath": "plasmic/gv/PlasmicNavBar.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "P0_Jb5rk7kGn",
-          "name": "Price",
-          "type": "managed",
-          "projectId": "mzuCRszeeZdCMSdpkmycrs",
-          "renderModuleFilePath": "plasmic/gv/PlasmicPrice.jsx",
-          "importSpec": {
-            "modulePath": "Price.jsx"
-          },
-          "cssFilePath": "plasmic/gv/PlasmicPrice.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "fZ7KdXU9buuc",
-          "name": "Footer",
-          "type": "managed",
-          "projectId": "mzuCRszeeZdCMSdpkmycrs",
-          "renderModuleFilePath": "plasmic/gv/PlasmicFooter.jsx",
-          "importSpec": {
-            "modulePath": "Footer.jsx"
-          },
-          "cssFilePath": "plasmic/gv/PlasmicFooter.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "rNf4ukAwNfeE",
-          "name": "CopyrightSocialLanguage",
-          "type": "managed",
-          "projectId": "mzuCRszeeZdCMSdpkmycrs",
-          "renderModuleFilePath": "plasmic/gv/PlasmicCopyrightSocialLanguage.jsx",
-          "importSpec": {
-            "modulePath": "CopyrightSocialLanguage.jsx"
-          },
-          "cssFilePath": "plasmic/gv/PlasmicCopyrightSocialLanguage.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "ebWN3X5SLeTx",
-          "name": "EmojiValueProps",
-          "type": "managed",
-          "projectId": "mzuCRszeeZdCMSdpkmycrs",
-          "renderModuleFilePath": "plasmic/gv/PlasmicEmojiValueProps.jsx",
-          "importSpec": {
-            "modulePath": "EmojiValueProps.jsx"
-          },
-          "cssFilePath": "plasmic/gv/PlasmicEmojiValueProps.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -244,6 +180,32 @@
           "cssFilePath": "plasmic/gv/PlasmicLiveGames.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "q5nQYWWL3Xpt",
+          "name": "Nav",
+          "type": "managed",
+          "projectId": "mzuCRszeeZdCMSdpkmycrs",
+          "renderModuleFilePath": "plasmic/gv/PlasmicNav.jsx",
+          "importSpec": {
+            "modulePath": "Nav.jsx"
+          },
+          "cssFilePath": "plasmic/gv/PlasmicNav.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5-fMA3NxLlyg",
+          "name": "Homenav",
+          "type": "managed",
+          "projectId": "mzuCRszeeZdCMSdpkmycrs",
+          "renderModuleFilePath": "plasmic/gv/PlasmicHomenav.jsx",
+          "importSpec": {
+            "modulePath": "Homenav.jsx"
+          },
+          "cssFilePath": "plasmic/gv/PlasmicHomenav.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

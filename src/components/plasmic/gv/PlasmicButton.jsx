@@ -45,15 +45,6 @@ export const PlasmicButton__ArgProps = new Array(
   "target"
 );
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -260,127 +251,123 @@ function PlasmicButton__RenderFunc(props) {
             )
           })}
         >
-          {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : true)
-            ? p.renderPlasmicSlot({
-                defaultContents: (
-                  <MenuIcon
-                    className={classNames(projectcss.all, sty.svg__oOszG)}
-                    role={"img"}
-                  />
-                ),
+          {p.renderPlasmicSlot({
+            defaultContents: (
+              <MenuIcon
+                className={classNames(projectcss.all, sty.svg__oOszG)}
+                role={"img"}
+              />
+            ),
 
-                value: args.startIcon,
-                className: classNames(sty.slotTargetStartIcon, {
-                  [sty.slotTargetStartIconcolors_black]: hasVariant(
-                    $state,
-                    "colors",
-                    "black"
-                  ),
-
-                  [sty.slotTargetStartIconcolors_blue]: hasVariant(
-                    $state,
-                    "colors",
-                    "blue"
-                  ),
-
-                  [sty.slotTargetStartIconcolors_gray]: hasVariant(
-                    $state,
-                    "colors",
-                    "gray"
-                  ),
-
-                  [sty.slotTargetStartIconshowEndIcon]: hasVariant(
-                    $state,
-                    "showEndIcon",
-                    "showEndIcon"
-                  ),
-
-                  [sty.slotTargetStartIconsize_large]: hasVariant(
-                    $state,
-                    "size",
-                    "large"
-                  ),
-
-                  [sty.slotTargetStartIconsize_small]: hasVariant(
-                    $state,
-                    "size",
-                    "small"
-                  )
-                })
-              })
-            : null}
-        </div>
-      ) : null}
-      {(hasVariant($state, "iconOnly", "iconOnly") ? true : true)
-        ? p.renderPlasmicSlot({
-            defaultContents: "Enter some text",
-            value: args.children,
-            className: classNames(sty.slotTargetChildren, {
-              [sty.slotTargetChildrencolors_black]: hasVariant(
+            value: args.startIcon,
+            className: classNames(sty.slotTargetStartIcon, {
+              [sty.slotTargetStartIconcolors_black]: hasVariant(
                 $state,
                 "colors",
                 "black"
               ),
 
-              [sty.slotTargetChildrencolors_blue]: hasVariant(
+              [sty.slotTargetStartIconcolors_blue]: hasVariant(
                 $state,
                 "colors",
                 "blue"
               ),
 
-              [sty.slotTargetChildrencolors_gray]: hasVariant(
+              [sty.slotTargetStartIconcolors_gray]: hasVariant(
                 $state,
                 "colors",
                 "gray"
               ),
 
-              [sty.slotTargetChildrencolors_link]: hasVariant(
-                $state,
-                "colors",
-                "link"
-              ),
-
-              [sty.slotTargetChildreniconOnly]: hasVariant(
-                $state,
-                "iconOnly",
-                "iconOnly"
-              ),
-
-              [sty.slotTargetChildrenisDisabled]: hasVariant(
-                $state,
-                "isDisabled",
-                "isDisabled"
-              ),
-
-              [sty.slotTargetChildrenrounded]: hasVariant(
-                $state,
-                "rounded",
-                "rounded"
-              ),
-
-              [sty.slotTargetChildrenshowEndIcon]: hasVariant(
+              [sty.slotTargetStartIconshowEndIcon]: hasVariant(
                 $state,
                 "showEndIcon",
                 "showEndIcon"
               ),
 
-              [sty.slotTargetChildrensize_large]: hasVariant(
+              [sty.slotTargetStartIconsize_large]: hasVariant(
                 $state,
                 "size",
                 "large"
               ),
 
-              [sty.slotTargetChildrensize_large_rounded]:
-                hasVariant($state, "size", "large") &&
-                hasVariant($state, "rounded", "rounded"),
-              [sty.slotTargetChildrensize_small]: hasVariant(
+              [sty.slotTargetStartIconsize_small]: hasVariant(
                 $state,
                 "size",
                 "small"
               )
             })
-          })
-        : null}
+          })}
+        </div>
+      ) : null}
+      {p.renderPlasmicSlot({
+        defaultContents: "Enter some text",
+        value: args.children,
+        className: classNames(sty.slotTargetChildren, {
+          [sty.slotTargetChildrencolors_black]: hasVariant(
+            $state,
+            "colors",
+            "black"
+          ),
+
+          [sty.slotTargetChildrencolors_blue]: hasVariant(
+            $state,
+            "colors",
+            "blue"
+          ),
+
+          [sty.slotTargetChildrencolors_gray]: hasVariant(
+            $state,
+            "colors",
+            "gray"
+          ),
+
+          [sty.slotTargetChildrencolors_link]: hasVariant(
+            $state,
+            "colors",
+            "link"
+          ),
+
+          [sty.slotTargetChildreniconOnly]: hasVariant(
+            $state,
+            "iconOnly",
+            "iconOnly"
+          ),
+
+          [sty.slotTargetChildrenisDisabled]: hasVariant(
+            $state,
+            "isDisabled",
+            "isDisabled"
+          ),
+
+          [sty.slotTargetChildrenrounded]: hasVariant(
+            $state,
+            "rounded",
+            "rounded"
+          ),
+
+          [sty.slotTargetChildrenshowEndIcon]: hasVariant(
+            $state,
+            "showEndIcon",
+            "showEndIcon"
+          ),
+
+          [sty.slotTargetChildrensize_large]: hasVariant(
+            $state,
+            "size",
+            "large"
+          ),
+
+          [sty.slotTargetChildrensize_large_rounded]:
+            hasVariant($state, "size", "large") &&
+            hasVariant($state, "rounded", "rounded"),
+          [sty.slotTargetChildrensize_small]: hasVariant(
+            $state,
+            "size",
+            "small"
+          )
+        })
+      })}
       {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : false) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__drHzf, {

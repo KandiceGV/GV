@@ -32,15 +32,6 @@ export const PlasmicNavBar__VariantProps = new Array("filled", "searchOpen");
 
 export const PlasmicNavBar__ArgProps = new Array();
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicNavBar__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -134,13 +125,6 @@ function PlasmicNavBar__RenderFunc(props) {
           }}
         />
 
-        <ProfileIcon
-          data-plasmic-name={"svg"}
-          data-plasmic-override={overrides.svg}
-          className={classNames(projectcss.all, sty.svg)}
-          role={"img"}
-        />
-
         <div
           className={classNames(
             projectcss.all,
@@ -157,6 +141,13 @@ function PlasmicNavBar__RenderFunc(props) {
             </span>
           </React.Fragment>
         </div>
+        <ProfileIcon
+          data-plasmic-name={"svg"}
+          data-plasmic-override={overrides.svg}
+          className={classNames(projectcss.all, sty.svg)}
+          role={"img"}
+        />
+
         <Button
           data-plasmic-name={"deposit"}
           data-plasmic-override={overrides.deposit}

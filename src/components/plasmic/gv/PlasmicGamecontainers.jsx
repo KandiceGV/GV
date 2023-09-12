@@ -31,15 +31,6 @@ export const PlasmicGamecontainers__VariantProps = new Array("small");
 
 export const PlasmicGamecontainers__ArgProps = new Array("link", "img");
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicGamecontainers__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(
